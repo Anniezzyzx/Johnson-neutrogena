@@ -1,0 +1,237 @@
+/**
+ * Main reset
+ * ----------
+ */
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  font-size: 100%; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/**
+ * Centering utilties
+ * ------------------
+ */
+.center {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; }
+
+.middle {
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.center-middle {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+.center-trans {
+  left: 50%;
+  transform: translateX(-50%); }
+
+.middle-trans {
+  top: 50%;
+  transform: translateY(-50%); }
+
+.center-middle-trans {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+/**
+ * Generic utilties
+ * ----------------
+ */
+.alpha-0 {
+  opacity: 0; }
+
+.invisible {
+  visibility: hidden; }
+
+.hide {
+  display: none; }
+
+.offstage {
+  left: -9999px;
+  top: -9999px; }
+
+.anti-alias {
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.gpu {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: translateZ(0); }
+
+.line-fix {
+  outline: 1px solid transparent; }
+
+@supports (-moz-appearance: meterbar) {
+  .gpu {
+    transform: translateZ(0) rotate(0.02deg); } }
+
+.transform-reset {
+  transform: none !important; }
+
+/**
+ * Main base
+ * ---------
+ * Generic ad layout file
+ */
+body {
+  background: #707070; }
+
+#ad_content {
+  background: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  overflow: hidden; }
+  #ad_content div, #ad_content svg {
+    position: absolute; }
+
+.backup {
+  background: url("backup.jpg") -1px -1px no-repeat;
+  background-size: 300px 600px; }
+
+#ad_content, .backup {
+  border: 1px solid black;
+  cursor: pointer;
+  position: absolute;
+  width: 300px;
+  height: 600px; }
+
+/* ---------------------------------------- */
+#img_1 {
+  bottom: 0; }
+
+#txt_1 {
+  top: 39px;
+  right: 33px; }
+
+#txt_2 {
+  top: 68px;
+  right: 65px; }
+
+#txt_2_b {
+  top: 103px;
+  right: 62px; }
+
+#txt_3 {
+  top: 104px;
+  right: 61px; }
+
+#branding {
+  top: 68px;
+  right: 87px; }
+
+#img_2 {
+  top: 278px;
+  right: 121px; }
+
+#img_3 {
+  top: 411px;
+  right: 203px; }
+
+#img_4 {
+  top: 325px;
+  right: 92px; }
+
+#img_5 {
+  top: 200px;
+  right: 4px; }
+
+#img_6 {
+  top: 152px; }
+
+#cta_container {
+  top: 512px;
+  left: 74px; }
+
+#cta_txt {
+  top: 10px;
+  left: 15px; }
+
+.sprite-png { background-image: url('sprite.png') }
+.sprite-png.branding {
+  width: 122px;
+  height: 25px;
+  background-position: -156px -192px;
+  background-size: 387px 525px; }
+.sprite-png.img_1 {
+  width: 300px;
+  height: 497px;
+  background-position: 0px 0px; }
+.sprite-png.img_2 {
+  width: 167px;
+  height: 186px;
+  background-position: -156px 0px;
+  background-size: 387px 525px; }
+.sprite-png.img_3 {
+  width: 72px;
+  height: 64px;
+  background-position: -117px -396px;
+  background-size: 387px 525px; }
+.sprite-png.img_4 {
+  width: 58px;
+  height: 144px;
+  background-position: -327px 0px;
+  background-size: 387px 525px; }
+.sprite-png.img_5 {
+  width: 111px;
+  height: 273px;
+  background-position: 0px -252px;
+  background-size: 387px 525px; }
+.sprite-png.img_6 {
+  width: 300px;
+  height: 281px;
+  background-position: -234px -504px; }
+.sprite-svg { background: url('sprite.svg') no-repeat; }
+.sprite-svg.branding {
+  background-position: 0 99.95040229251626%;
+  width: 110.94px;
+  height: 24.54px; }
+.sprite-svg.cta {
+  background-position: 0 71.67877771566984%;
+  width: 153px;
+  height: 44.99px; }
+.sprite-svg.cta_txt {
+  background-position: 0 86.68864508458088%;
+  width: 124.38px;
+  height: 20.97px; }
+.sprite-svg.txt_1 {
+  background-position: 0 0;
+  width: 241.03px;
+  height: 35.19px; }
+.sprite-svg.txt_2 {
+  background-position: 0 34.34170797014755%;
+  width: 175.75px;
+  height: 30.47px; }
+.sprite-svg.txt_2_b {
+  background-position: 0 50.04411602514613%;
+  width: 175.19px;
+  height: 24.66px; }
+.sprite-svg.txt_3 {
+  background-position: 0 19.451661046929413%;
+  width: 177.22px;
+  height: 25.09px; }

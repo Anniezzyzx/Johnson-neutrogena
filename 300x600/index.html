@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Banner</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="bundle.css">
+    <meta name="ad.size" content="width=300,height=600">
+  </head>
+
+  <body>
+    <script>var clickTag = '#';</script>
+
+    <div id="backup" onclick="window.open(window.clickTag || window.clickTAG)"></div>
+    <div id="ad_content" class="invisible">
+
+
+      <div id="img_1" class="sprite-png img_1 gpu"></div>
+
+      <div id="txt_1" class="sprite-svg txt_1"></div>
+      <div id="txt_2" class="sprite-svg txt_2"></div>
+      <div id="txt_2_b" class="sprite-svg txt_2_b"></div>
+      <div id="txt_3" class="sprite-svg txt_3"></div>
+      <div id="branding" class="sprite-png branding"></div>
+
+      <div id="img_6" class="sprite-png img_6 invisible gpu"></div>
+      <div id="img_2" class="sprite-png img_2  gpu"></div>
+      <div id="img_3" class="sprite-png img_3  gpu"></div>
+      <div id="img_5" class="sprite-png img_5  gpu"></div>
+      <div id="img_4" class="sprite-png img_4  gpu"></div>
+
+
+
+
+
+
+
+
+
+      <div id="cta_container" class="gpu">
+        <div id="cta" class="sprite-svg cta"></div>
+        <div id="cta_txt" class="sprite-svg cta_txt"></div>
+      </div>
+
+
+
+
+
+      <!-- Ad content goes here. Remove this comment -->
+    </div>
+
+    <!--[if !IE]><!-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="bundle.js"></script>
+    <!--<![endif]-->
+    <!--[if IE]>
+    <script>
+      document.getElementById('backup').className = 'backup'; // IE9 or below
+    </script>
+    <![endif]-->
+  </body>
+
+</html>
